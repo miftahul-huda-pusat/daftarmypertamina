@@ -20,13 +20,27 @@
       margin-bottom: 10px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-      display: block;
-    }
+    .images-row {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.barcode-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+.nama_barcode {
+  font-size: 20px;
+  margin: 5px 0 10px;
+  color: #2704c0;
+  font-weight: bold;
+}
 
     .section {
       margin: 0;
@@ -73,20 +87,22 @@
       }
     }
 
-    .button-wa {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 25px;
-      font-size: 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
+.button-wa {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 700px;
+    max-width: 100%;
+  }
 
-    .button-wa:hover {
-      background-color: #1ebe5d;
-    }
+  .button-wa:hover {
+    background-color: #1ebe5d;
+  }
 
     p {
       font-size: 18px;
@@ -103,19 +119,26 @@
   </div>
 
   <div class="section images-row">
-    <img src="barcode-pertalite.jpg" alt="Barcode Pertalite" />
-    <img src="barcode-solar.jpg" alt="Barcode Solar" />
+    <div class="barcode-box">
+      <img src="barcode-pertalite.jpg" alt="Barcode Pertalite" />
+      <h1 class="nama_barcode">PERTALITE</h1>
+    </div>
+    <div class="barcode-box">
+      <img src="barcode-solar.jpg" alt="Barcode Solar" />
+      <h1 class="nama_barcode">SOLAR</h1>
+    </div>
   </div>
+  
 
   <div class="section centered">
-    <img src="form-checker.jpg" alt="Form Pendaftaran" style="width: 300px;" />
+    <img src="form-checker.png" alt="Form Pendaftaran" style="width: 700px;" />
   </div>
 
   <p class="text-note">Bayar setelah di UJI COBA</p>
 
   <div class="emoji">👇👇👇</div>
 
-  <a href="https://wa.me/6281234567890" class="button-wa" target="_blank">Whatsapp</a>
+  <a href="https://wa.me/6281556440096" class="button-wa" target="_blank">Whatsapp</a>
 
   <p>Garansi selama buat di kami</p>
 
